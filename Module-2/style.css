@@ -1,110 +1,140 @@
-body {
-    font-family: 'Playfair+Display', serif;
-}
-p,h2 {
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-}
-.container {
-    width: 900px;
-    margin: 0 auto;
-}
-nav {margin: 0 auto
-}
-.nav    {
-    padding: 72px 0 99px 0;
-}
-.menu {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    font-size: 0px;
-    text-align: center;
-}
-.menu li {
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 14px;
-}
-.menu li:first-child{
-    margin-right: 122px;
-}
-.menu li:first-child(2) {
-    margin-right: 105px;
-}
-.menu li:first-child(3) {
-    margin-right: 95px;
-}
-.menu li:first-child{
-    margin-right: 5px;
-}
-.menu a {
-    display: block;
-    color: rgb(98, 98, 98);
-    font-weight: 400;
-    text-decoration: none;
-}
-.menu a:hover,
-.menu a:focus {
-    color: rgb(3, 169, 244);
-}
-.list-block {
-    padding-bottom: 70px;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-.ul-block {
+
+.header{
+    padding-top: 77px;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 103px;
+
+}
+
+
+
+
+
+.nav{
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
+    font-size: 0;
+    width: 554px;
+}
+
+
+.point{
+    margin: 0 auto;
+}
+
+li {
+    display: inline-block;;
+    margin-right: 100px;
+}
+
+li:nth-child(n+4){
+    margin-right: 0;
+}
+.url-nav{
+
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(98, 98, 98, 255);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.url-nav:hover{
+    color: #03a9f4;
+}
+
+    list-style: none;
     padding: 0;
     font-size: 0;
     text-align: -webkit-center;
+
+
 }
-.li-block {
+
+.section{
+    padding-bottom: 100px;
+}
+
+
+.block{
     display: inline-block;
-    max-width: 420px;
     font-size: 14px;
     margin: 0 60px 135px 0;
+    width: 420px;
+    margin-bottom: 136px;
 }
-.li-block:nth-child(2n){
-    margin-left: auto;
-    margin-right: 0;
 
+.photo{
+    width: 420px;
+    height: 280px;
 }
-.li-block:nth-last-child(-n+2){
-    margin-bottom: 0px;
+
+.step{
+    margin-left: 60px;
 }
-.li-block img{
+
+.block:nth-child(n+5){
+    margin-bottom:  1px;
+}
+
+.photo{
     margin-bottom: 31px;
 }
 
-.li-block span {
-    display:inline-block;
+.lifestyle{
     font-size: 14px;
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    margin-bottom: 31px;
-}
-
-.li-block h2 {
-    font-size: 30px;
-    color: rgb(98, 98, 98);
-    margin-bottom: 36px;
-}
-
-.li-block p {
-    font-size: 14px;
-    color: rgb(98, 98, 98);
-    line-height: 1.714;
+    color: rgba(180, 173, 158, 255);
     text-align: left;
+    text-transform: uppercase;
+    margin: 0 0 28px;
+    font-family: 'Playfair Display', serif;
+}
+.h3{
+    font-size: 30px;
+    color: rgba(98, 98, 98, 255);
+    text-align: left;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
 }
 
-button {
+.text{
+    font-size: 14px;
+    color: rgba(98, 98, 98, 255);
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer{
+    padding-top: 54px;
+}
+
+
+.footer-button{
+    display: block;
+    margin: 0 auto;
+    width: 164px;
+    height: 60px;
+    /* margin-top: 30px; */
+
+}
+
+
+
+.button-url{
+    align-items: center;
+    text-decoration: none;
     font-size: 20px;
-    color: rgb(98, 98, 98);
-    border: solid 1px rgb(98, 98, 98);
-    background-color: #fff;
-    padding: 20px 33px;
-    margin-top: 50px;
-    cursor: pointer;
+    color: rgba(98, 98, 98, 255);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    /* padding: 21px 34px; */
 }
