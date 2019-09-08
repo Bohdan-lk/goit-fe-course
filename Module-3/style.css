@@ -52,10 +52,10 @@ li:nth-child(n+4){
     color: #03a9f4;
 }
 
-    list-style: none;
-    padding: 0;
+.main {
+    width: 900px;
+    margin: 0 auto;
     font-size: 0;
-    text-align: -webkit-center;
 
 
 }
@@ -67,8 +67,6 @@ li:nth-child(n+4){
 
 .block{
     display: inline-block;
-    font-size: 14px;
-    margin: 0 60px 135px 0;
     width: 420px;
     margin-bottom: 136px;
 }
