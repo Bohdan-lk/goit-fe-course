@@ -1,3 +1,189 @@
-html{
-    font-family: Arial, sans-serif;
+html {
 
+    font-family: Arial, sans-serif;
+}
+* {
+    outline: 1px solid red;
+}
+
+/*Рабочая область*/
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+/*заголовок*/
+.header {
+    height: 60px;
+}
+/*борьба с проблемой контейнера нулевой высоты*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+h1.logo {
+    margin-left: 0; /*отступа от левого края элемента*/
+    float: left; /*по какой стороне будет выравниваться элемент,*/
+    text-transform: uppercase;  /*Описание Управляет преобразованием текста элемента в заглавные или прописные символы. Когда значение отлично от none, регистр исходного текста будет изменен.*/
+    font-size: 30px; /*Определяет размер шрифта элемента*/
+    color:#555252; /*пипетка Photoshop шестнадцатеричный*/
+    margin-top: 0; /*отступа от верхнего края элемента*/
+}
+h1.logo::first-letter {  /*первая буква логотипа по цвету из пипетки*/
+    color: #1abc9c;
+}
+a {
+    text-decoration: none;
+    color: #0f0101 ;
+    text-transform: uppercase;
+}
+nav>ul>li {
+    display: inline; /*свойство, которое определяет, как элемент должен быть показан в документе.*/
+    margin-left: 24px; /*Устанавливает величину отступа от левого края элемента*/
+}
+ul {
+    margin-right: 0;  /*выравнило по правому краю менюшку*/
+    float: right;
+    font-size: 14px;
+}
+li a:hover {
+    color: #1abc9c;  /*наведение цвет меняется на (пипетка фотошоп)*/
+}
+h2.block_news {
+    display: block; /*свойство, которое определяет, как элемент должен быть показан*/
+    font-size: 48px; /*размер шрифта*/
+    color: #515151; /*цвет*/
+    text-align: center; /*Выравнивание текста по центру*/
+    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+}
+h2.blog_news::after {    /*текст для привлечения внимания (зеленая штучка под надписями)*/
+    content: " ";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.products,section.blog { /*размеры отступа от верха и ширина*/
+    margin-top: 90px;
+    width: 1170px;
+}
+.product-block {   /*отступы (упорядочноть) li*/
+    width: 255px;
+    height: 322px;
+    float: left;
+    margin-right: 30px;
+    box-sizing: border-box;
+    background-color: #323232;
+}
+.top_cards {
+    margin-left: 0;   /*Ul- отступ по левому краю равен 0*/
+}
+.bottom_cards {
+    margin-top: 30px;  /* отсупы для груп товаров вторая строка*/   /*сверху отступ 30*/
+    margin-left: 0;    /*отступ слева 0*/
+}
+.product-block:last-child {    /*последний элемент родителя оформление*/
+    float: right; /*равнение по правой стороне*/
+    box-sizing: border-box;
+/*    Применяется для изменения алгоритма расчета ширины и высоты элемента.*/
+
+/*    Согласно спецификации CSS ширина блока складывается из ширины контента (width), значений отступов (margin),
+ полей (padding) и границ (border). Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить
+  этот алгоритм, чтобы свойства width и height задавали размеры не контента, а размеры блока.*/
+    /*border-box  Свойства width и height включают в себя значения полей и границ, но не отступов (margin)*/
+    margin-right: 20px;
+}
+.product-block:hover {      /*при наведении на товар цвет изменяется*/
+    background-color: #1abc9c;
+}
+.info {
+    box-sizing: border-box;  /*место под надписи товара*/
+}
+.name,.price {    /*цвет---рамер шрифта----поле от нижнего края*/
+    color:  #ffffff;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-transform: uppercase;   /*Все символы текста становятся прописными (верхний регистр).*/
+}
+.name {        /*для имини товара*/
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+.price {    /*для ценны товара*/
+    margin-top: -4px;
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 13px;
+}
+p {
+    margin-top: 10px;
+}
+div.topic {
+    width: 1170px;
+    margin-top: 100px;
+}
+.news {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.news_left,.news_center {
+    float: left;
+    width: 350px;
+    height: 495px;
+    margin-right: 30px;
+}
+.news_right {
+    float: right;
+    width: 350px;
+    height: 495px;
+    margin-right: 0px;
+}
+.image{
+    box-sizing: border-box;
+    width: 347px;
+    height: 262px;
+}
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555252;
+}
+h3::after {
+    content: " ";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background-color: #1abc9c;
+    margin-top: 18px;
+
+}
+article {
+    height: 65px;
+    width: 350px;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555252;
+    display: inline-block;
+}
+.blog .news a {
+    background-color: #4ec6ab;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 15px 43px;
+    border-radius: 2px;
+    margin-top: 20px;
+    display: inline-block;
+}
+li {
+    list-style-type: none;
+}
