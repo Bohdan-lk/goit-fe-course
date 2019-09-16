@@ -231,13 +231,13 @@ inherit
     text-decoration: none;  без декорации
 }
 */
-
 .nav-link:hover {
     color: #1abc9c;
 }
 /*.nav-link:hover {   изменение цвета при наведении на меню
     color: #1abc9c;
 }*/
+
                                                 /*MAIN*/
 
 .gallery-wrapper {
