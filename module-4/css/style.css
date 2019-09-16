@@ -240,24 +240,24 @@ inherit
 }*/
                                                 /*MAIN*/
 
-.gallary-wrapper {
+.gallery-wrapper {
     margin: 0 auto;
 }
-.gallary-title,
+.gallery-title,
 .blog-title {
     text-align: center;
     font-size: 48px;
     text-transform: uppercase;
 }
 /*
-.gallary-title,            H2  центр текст, размер шрифта, Все символы текста становятся прописными (верхний регистр)
+.gallery-title,            H2  центр текст, размер шрифта, Все символы текста становятся прописными (верхний регистр)
 .blog-title {
     text-align: center;
     font-size: 48px;
     text-transform: uppercase;
 }
 */
-.gallary-title:after {
+.gallery-title:after {
     display: block;
     content: '';
     clear: both;
@@ -269,7 +269,7 @@ inherit
 }
 
 /*
-.gallary-title:after {      линия под заголовком H2
+.gallery-title:after {      линия под заголовком H2
     display: block;
     content: '';
     clear: both;
@@ -279,7 +279,7 @@ inherit
     margin-top: 30px;
     margin-bottom: 90px;
 }*/
-.gallary-item {
+.photo-it {
     display: block;
     float: left;
     width: 255px;
@@ -288,45 +288,45 @@ inherit
 }
 
 /*
-.gallary-item {      товары
+.photo-it {      товары
     display: block;  показывает блочную модель
     float: left;  выравнивает полевой стороне
     width: 255px;  ширина
     background: #e9f0fd;   цвет
     margin: 0 30px 30px 0;    отступ арджин с права и с низу по 30 мегапикселей
 }*/
-.gallary-item:nth-child(5) {
+.photo-it:nth-child(5) {
     margin-right: 0;
 }
 
 
 /*
-.gallary-item:nth-child(5) {  Псевдокласс :nth-child используется для добавления стиля к элементам на основе нумерации в дереве элементов.
+.photo-it:nth-child(5) {  Псевдокласс :nth-child используется для добавления стиля к элементам на основе нумерации в дереве элементов.
     margin-right: 0;
 }*/
-.gallary-item:last-child {
+.photo-it:last-child {
     margin-right: 0;
 }
 
 /*
-.gallary-item:last-child {  удаление тех 30px с права маржин (что бі он влез в разметку)
+.photo-it:last-child {  удаление тех 30px с права маржин (что бі он влез в разметку)
     margin-right: 0;
 }*/
 
-.gallary-item:hover .gallary-item-bc {
+.photo-it:hover .div-photo {
     background: #1abc9c;
 }
 /*
-.gallary-item:hover .gallary-item-bc {  при навидении на цену товара светится цена и название товара  фон (background) цвет фотошоп пипетка
+.photo-it:hover .div-photo {  при навидении на цену товара светится цена и название товара  фон (background) цвет фотошоп пипетка
     background: #1abc9c;
 }*/
 
-.gallary-item-bc {
+.div-photo {
     background-color: #323232;
 }
 
 /*
-.gallary-item-bc {  по умолчанию цвет без наведения
+.div-photo {  по умолчанию цвет без наведения
     background-color: #323232;
 }*/
 .product_title {
