@@ -172,8 +172,12 @@ inherit
 }*/
 
 .list-item {
-    display: inline-block;
+    float: left;
     margin-right: 35px;
+    list-style-type: none;
+}
+.nav-list :nth-child(6) {
+    margin-right: 0;
 }
 
 /*
@@ -191,7 +195,12 @@ inherit
 элементы в одной строке выравниваются вертикально подобно элементам со строчным боксом.
 */
 
-.list-item:last-child {
+.nav-list {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.nav-list:last-child {
     margin-right: 0;
 }
 
@@ -201,6 +210,7 @@ inherit
 
 }*/
 .nav-link {
+    display: block;
     font-size: 14px;
     color: black;
     text-transform: uppercase;
@@ -248,6 +258,7 @@ inherit
     text-align: center;
     font-size: 48px;
     text-transform: uppercase;
+    margin-bottom: 90px;
 }
 /*
 .gallery-title,            H2  центр текст, размер шрифта, Все символы текста становятся прописными (верхний регистр)
@@ -265,7 +276,6 @@ inherit
     border: 7px solid #1abc9c;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 90px;
 }
 
 /*
@@ -279,6 +289,14 @@ inherit
     margin-top: 30px;
     margin-bottom: 90px;
 }*/
+/*.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+
 .photo-it {
     display: block;
     float: left;
@@ -295,7 +313,7 @@ inherit
     background: #e9f0fd;   цвет
     margin: 0 30px 30px 0;    отступ арджин с права и с низу по 30 мегапикселей
 }*/
-.photo-it:nth-child(5) {
+.photo-it:nth-child(4) {
     margin-right: 0;
 }
 
