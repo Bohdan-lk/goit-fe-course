@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+}
+
+/*
+box-sizing Согласно спецификации CSS ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border). Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить этот алгоритм, чтобы свойства width и height задавали размеры не контента, а размеры блока.
+
+border-box
+Свойства width и height включают в себя значения полей и границ, но не отступов (margin).*/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/*inherit  Наследует значение родителя.*/
+
+body {
+    font-family: "Roboto","OpenSans", sans-serif;
+    color: #555252;
+}
+/*
+sans-serif-шрифт без засечек
+color по букве Т из лого фотшоп
+*/
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+/*
+Display-Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+    block-Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого.
+
+max-width-Устанавливает максимальную ширину элемента. Значение ширины элемента будет вычисляться в зависимости от значений установленных свойств width, max-width и min-width. В табл. 1 показано, чем руководствуется браузер при совместном использовании указанных стилевых свойств.
+Устанавливает высоту блочных или заменяемых элементов (к ним, например, относится тег <img>). Высота не включает толщину границ вокруг элемента, значение отступов и полей.
+
+height: auto Если содержимое блока превышает указанную высоту, то высота элемента останется неизменной, а содержимое будет отображаться поверх него. Из-за этой особенности может получиться наложение содержимого элементов друг на друга, когда элементы в коде HTML идут последовательно. Чтобы этого не произошло, добавьте overflow: auto к стилю элемента.*/
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/*
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+Описано для чего использовать псевдо элемент
+https://www.w3schools.com/howto/howto_css_clearfix.asp*/
+
+.container {
+        width: 1110px;
+        margin: 0 auto;
+}
+
+
+/* HEADER*/
+.logo {
+    font-family: "Roboto", sans-serif;
+    color :#555252;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    float: left;
+    padding-top: 37px;
+
+}
+
+.logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.site-navigations {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 505px;
+    float: right;
+    margin-top: 43px;
+}
+.site-navigations li {
+    float: left;
+}
+.site-navigations li:not(:last-child) {
+    margin-right: 30px;
+}
+.site-navigations a:hover,
+.site-navigations a:focus {
+    color: #1abc9c
+}
+.page-header {
+    padding-bottom: 32px;
+}
+.site-navigations a {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    line-height: 11px;
+    color: #0f0101;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+
+/*--------------Slider------------------*/
+
+.banner {
+    background-image:linear-gradient(rgba(0,0,12, 0.5), rgba(0,0,2, 0.5)),
+    url(../image/page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title {
+    font-family: "Roboto" , sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 82px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.p-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+.p-text {
+    font-family: "Roboto", sans-serif;    семейство шрифта>шрифт>шрифт без засечек
+    font-weight: 400;     Устанавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100.
+    font-size: 24px;     Определяет размер шрифта элемента.
+    line-height: 54px;    Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта
+    color: #fff;    Определяет цвет текста элемента.
+    padding: 0;      Устанавливает значение полей вокруг содержимого элемента.
+Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое
+    margin: 0;    Устанавливает величину отступа от каждого края элемента.
+Отступом является пространство от границы текущего элемента до внутренней границы его родительского элемента
+}*/
+
+.position {
+    position: relative;
+    margin: 0 auto;
+    height: 600px;
+}
+.right-but {
+    background: url("../image/page-l.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color:  #1abc9c;
+    background-position: center;
+    width: 104px;
+    height: 104px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.left-but {
+    background: url("../image/page-r.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color:  #1abc9c;
+    background-position: center;
+    width: 104px;
+    height: 104px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.right-but:hover, .left-but:hover,
+.right-but:hover, .left-but:focus {
+    opacity: 1;
+}
+
+.text-buttom {
+    position: absolute;
+    top: 219px;
+    left: 185px;
+
+}
+
+
+
+/*
+------------------------PRODUCTS-----------------------------------*/
+
+
+.products {
+    background-color: #e9f0fd;
+    height: 676px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+
+
+
