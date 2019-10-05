@@ -82,6 +82,7 @@ img {
     color: #333333;
     text-align: center;
     margin-bottom: 23px;
+    display: block;
 }
 .second-title {
     font-family: "Montserrat", sans-serif;
@@ -106,7 +107,6 @@ img {
 
 .text-service {
     font-family: 'Roboto', sans-serif;
-    width: 290px;
 }
 .second-title::after {
     display: block;
@@ -123,7 +123,6 @@ img {
     padding-left: 60px;
 }
 .ul-service {
-    width: 1182px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
