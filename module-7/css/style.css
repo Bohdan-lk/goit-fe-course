@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-BoldItalic.eot');
+    src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'),
+    url('../fonts/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Merriweather-BoldItalic.woff') format('woff'),
+    url('../fonts/Merriweather-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Regular.eot');
+    src: local('Merriweather Regular'), local('Merriweather-Regular'),
+    url('../fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Merriweather-Regular.woff') format('woff'),
+    url('../fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../fonts/DroidSerif-Italic.eot');
+    src: local('Droid Serif Italic'), local('DroidSerif-Italic'),
+    url('../fonts/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DroidSerif-Italic.woff') format('woff'),
+    url('../fonts/DroidSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 14px;
+    line-height: 41px;
+    color: #777777;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin: auto;
+}
+
+/*///////////header\\\\\\\\\\\\*/
+.site_navigation a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 41px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222222;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.site_navigation a:hover {
+    color: #fed136;
+}
+
+.site_navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 485px;
+    justify-content: space-between;
+
+}
+
+.nav_header {
+    display: flex;
+    min-height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 78px;
+}
+.header_logo {
+    display: block;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/*////////service\\\\\\\\*/
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 40px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 75px;
+
+}
+.box-services {
+    display: flex;
+    list-style: none;
+}
+
+.item_services {
+    width: 290px;
+    padding-bottom: 120px;
+}
+.box-services li:not(:last-child) {
+    margin-right: 35px;
+}
+
+.services_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 13px;
+    text-align: center;
+    padding: 0;
+
+}
+
+.sub__services___title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    text-align: center;
+    line-height: 19px
+
+}
+
+.item_services::before {
+    display: block;
+    content: "";
+    width: 72px;
+    height: 72px;
+    border: 2px solid #fed136;
+    border-radius: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+}
+/*
+Содержимое выходит за границы круга.
+.round {
+    width: 72px;
+    height: 72px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background: mistyrose;
+}
+*/
+
+/*
+Содержимое, выходящее за границы круга с
+overflow: hidden;, невидно.
+*/
+
+/*.round {
+    width: 10em;
+    height: 10em;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    background: mistyrose;*/
+
+/*http://shpargalkablog.ru/2017/08/circle.html
+
+Round-круг */
+
+
+
+
+
+.item_services:first-of-type::before {
+    background-image: url("../image/Icon-Basket.png");
+}
+.item_services:nth-child(2)::before {
+    background-image: url("../image/Icon-Laptop.png");
+}
+.item_services:nth-child(3)::before {
+    background-image: url("../image/Icon-Locked.png");
+}
+
+/*/////////////////contact\\\\\\\\\\\\\\\*/
+
+.title-contact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 110px;
+
+}
+
+.text-contact {
+    font-family: 'Merriweather',sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #6e6e6e;
+    text-align: center;
+    margin-bottom: 78px;
+}
+.contact{
+    background-color: #222222;
+    background-image: url("../image/Map Image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+/*/////////////input\\\\\\\\\\\\*/
+.inner {
+    display: flex;
+    height: 210px;
+    margin-bottom: 28px;
+
+}
+
+.input-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+
+}
+
+
+.input-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    width: 460px;
+}
+
+.input-text-area {
+    border: 0;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 455px;
+
+}
+
+.but {
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 26px 53px;
+    background-color: #fed136;
+    border-radius: 2px;
+    bottom: 0;
+
+}
+
+.but-div {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+input:invalid {
+    border: 2px solid #FF0000;
+}
+
+input:valid {
+    border: 2px solid #00FF00;
+}
