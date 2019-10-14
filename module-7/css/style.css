@@ -96,9 +96,12 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 485px;
     justify-content: space-between;
 
+}
+
+.li_navigation {
+    margin: 0 15px;
 }
 
 .nav_header {
@@ -106,7 +109,6 @@ img {
     min-height: 110px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 78px;
 }
 .header_logo {
     display: block;
@@ -258,7 +260,6 @@ Round-круг */
 /*/////////////input\\\\\\\\\\\\*/
 .inner {
     display: flex;
-    height: 210px;
     margin-bottom: 28px;
 
 }
@@ -297,8 +298,23 @@ Round-круг */
     width: 455px;
 
 }
-
 .but {
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding: 26px 53px;
+    /*background-color: #fed136;*/
+    border-radius: 2px;
+    bottom: 0;
+
+}
+
+
+.but:hover  {
     border: 0;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -312,6 +328,7 @@ Round-круг */
     bottom: 0;
 
 }
+
 
 .but-div {
     display: flex;
