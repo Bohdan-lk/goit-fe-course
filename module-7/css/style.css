@@ -337,10 +337,10 @@ Round-круг */
 
 }
 
-input:invalid {
+/*input:invalid {
     border: 2px solid #FF0000;
 }
 
 input:valid {
     border: 2px solid #00FF00;
-}
+}*/
