@@ -73,7 +73,9 @@ img {
     width: 940px;
     margin: auto;
 }
-
+.header {
+    padding: 0 0 123px;
+}
 /*///////////header\\\\\\\\\\\\*/
 .site_navigation a {
     font-family: 'Montserrat', sans-serif;
@@ -337,10 +339,10 @@ Round-круг */
 
 }
 
-/*input:invalid {
+input:invalid {
     border: 2px solid #FF0000;
 }
 
 input:valid {
     border: 2px solid #00FF00;
-}*/
+}
