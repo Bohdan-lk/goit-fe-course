@@ -37,11 +37,15 @@ img {
 }
 
 .page-header {
-    background-image: url("../img/Vector Smart Object.png");
+    background-image:linear-gradient(rgba(26, 25, 21, 0.3), rgba(26, 25, 21, 0.3)),
+    url("../img/Vector Smart Object.png");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.header {
+    margin: 0 auto 161px;
 }
 
 
@@ -49,16 +53,19 @@ img {
 /*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
 
 .ul-navigation a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     font-weight: 700;
-    border: 2px solid color(#ffffff);
+    border: 2px solid transparent;
     border-radius: 20px;
     padding: 10px 18px;
 
 }
+
+
+/* transparent;   прозрачный */
 
 .logo {
     text-decoration: none;
@@ -113,9 +120,21 @@ img {
     font-size: 14px;
     color: #fff;
     font-weight: 700;
-    background-color: #ff4e50;
-    border: none;
+    background-color: transparent;
+    /*border: none;*/
     border-radius: 30px;
+    border: 2px solid #ff4e50;
+}
+
+.first-but:hover {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    /*color: #fff;*/
+    font-weight: 700;
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+    border-radius: 30px;
+    transition: 0.3s;
 }
 
 /*/////////////////team\\\\\\\\\\\\\\\\\\\\*/
@@ -169,8 +188,14 @@ img {
     border-radius: 30px;
     text-align: center;
     background-color: #FFFAFA;
-
 }
+
+.other:hover {
+    color: #fff;
+    background-color:#ff4e50;
+    transition: 0.3s;
+}
+
 
 
 .team {
@@ -210,14 +235,19 @@ img {
 
 /* MEDIA */
 
-@media (max-width: 767px) {
+/*@media (max-width: 749px) от 749 px страница ведет себя так*/
+
+@media (max-width: 749px) {
 
     .container {
         width: 282px;
     }
+    .header {
+        margin-bottom: 30px;
+    }
 
     .navigation {
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -257,7 +287,7 @@ img {
         padding: 14px 23px;
     }
 
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 749px) {
         .li-team {
             margin-bottom: 26px;
         }
@@ -265,7 +295,7 @@ img {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 748px) {
 
     .container {
         width: 492px;
@@ -290,10 +320,13 @@ img {
         font-size: 24px;
         line-height: 28.8px;
     }
+    .header {
+        margin-bottom: 161px;
+    }
 
 
     .navigation {
-        margin-bottom: 161px;
+        /*margin-bottom: 161px;*/
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
