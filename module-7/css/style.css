@@ -90,10 +90,12 @@ img {
     text-transform: uppercase;
 }
 .site_navigation a:hover {
+    display: block;
     color: #fed136;
 }
 
 .site_navigation {
+    min-width: 480px;
     display: flex;
     list-style: none;
     margin: 0;
@@ -102,9 +104,9 @@ img {
 
 }
 
-.li_navigation {
+/*.li_navigation {
     margin: 0 15px;
-}
+}*/
 
 .nav_header {
     display: flex;
@@ -319,7 +321,7 @@ Round-круг */
 
 
 .but:hover  {
-    border: 0;
+    /*border: 0;*/
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -337,14 +339,14 @@ Round-круг */
 .but-div {
     display: flex;
     justify-content: center;
-
-
 }
 
-/*input:invalid {
-    border: 2px solid #FF0000;
+
+input:invalid {
+    border: 2px solid rgb(255, 0, 0);
 }
 
 input:valid {
-    border: 2px solid #00FF00;
-}*/
+    border: 2px solid rgb(0, 255, 0);
+}
+
