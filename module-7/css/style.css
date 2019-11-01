@@ -305,7 +305,7 @@ Round-круг */
 
 }
 .but {
-    border: 0;
+    /*border: 0;*/
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -320,6 +320,8 @@ Round-круг */
 }
 
 
+
+
 .but:hover  {
     /*border: 0;*/
     font-family: 'Montserrat', sans-serif;
@@ -332,6 +334,7 @@ Round-круг */
     background-color: #fed136;
     border-radius: 2px;
     bottom: 0;
+    transition: .3s;
 
 }
 
@@ -341,12 +344,20 @@ Round-круг */
     justify-content: center;
 }
 
-
-input:invalid {
-    border: 2px solid rgb(255, 0, 0);
+.but {
+    border: none;
 }
 
-input:valid {
+[required]:not(:placeholder-shown):invalid {
+
+    /*outline: 2px solid red;*/
+    border: 2px solid rgb(255, 0, 0);
+;
+}
+
+[required]:not(:placeholder-shown):valid {
+    /*outline: 2px solid green;*/
     border: 2px solid rgb(0, 255, 0);
 }
+
 
