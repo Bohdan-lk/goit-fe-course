@@ -355,15 +355,15 @@ Round-круг */
 /*[required]:placeholder-shown:invalid {*/
 /*    !*outline: 2px solid red;*!*/
 /*    border: 2px solid rgb(255, 0, 0);*/
-}
+/*}*/
 
+[required]:not(:placeholder-shown):valid {
+/*    !*outline: 2px solid green;*!*/
+    border: 2px solid rgb(0, 255, 0);
+}
 /*[required]:not(:placeholder-shown):valid {*/
 /*    !*outline: 2px solid green;*!*/
 /*    border: 2px solid rgb(0, 255, 0);*/
-}
-[required]:not(:placeholder-shown):valid {
-    /*outline: 2px solid green;*/
-    border: 2px solid rgb(0, 255, 0);
-}
+/*}*/
 
 
