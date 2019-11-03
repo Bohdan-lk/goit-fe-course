@@ -1,45 +1,153 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Module-9</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
-<header class="header container">
 
-    <nav class="nav_header">
-        <div class="logo">
-            <a href="#" class="header_logo"><img src="///////." alt="" height="" width=""></a>
+<!--wraper
+container-fluid тянется контенер (свойства бутсрапа)-->
+
+<div class="container-fluid">
+    <div class="container">
+<!--/wraper-->
+        <!--bootstrap row-->
+        <div class="row">
+            <!--bootstrap row col 12 на самых маленьких 12 колонок-->
+            <div class="col-12">
+                <header>
+                    <!--flex-column-reverse justify-content-md-between flex-md-row bootstrap свойства-->
+                    <div class="row  flex-column-reverse justify-content-md-between flex-md-row cl1-header">
+                        <div class="col-12 col-md-4">
+                            <a class="logo" href="#">URLAUBSGLÜCK</a>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <nav class="navigation">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button class="logo-text" href="#">Log in</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="logo-text" href="#">Sing up</button>
+                                    </div>
+
+                                </div>
+
+                            </nav>
+
+                        </div>
+                    </div>
+<!---------------------------------------------text-bla-bla-->
+                </header>
+                <div class="row justify-content-md-center">
+
+                    <section class="justify-content-md-center">
+                        <div class="row justify-content-md-center padding_bla">
+                            <div class="col-12 col-md-8">
+                                <h3 class="title-second">Share your holiday dreams</h3>
+                                <p class="text-main">And find the perfect partner
+                                    to fullfill it</p>
+
+<!----------------------------------------------first-but-->
+                                <button class="first-but">Find your holiday partner</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
-        <ul class="site_navigation">
-            <li class="li_navigation"><a href="#"></a></li>
-            <li class="li_navigation"><a href="#"></a></li>
-            <li class="li_navigation"><a href="#"></a></li>
-            <li class="li_navigation"><a href="#"></a></li>
-            <li class="li_navigation"><a href="#"></a></li>
-        </ul>
-    </nav>
-</header>
-<section class="service container">
-        <span class="first-title">?</span>
-        <h3 class="second-title">?</h3>
-        <ul class="ul-service">
-            <li class="li-service">
-                <h3 class="title-service">?A?</h3>
-                <p class="text-service">?B?</p>
-            </li>
-            <li class="li-service">
-                <h3 class="title-service">?A2?</h3>
-                <p class="text-service">?B2?</p>
-            </li>
-            <li class="li-service">
-                <h3 class="title-service">?A3?</h3>
-                <p class="text-service">?В3?</p>
-            </li>
-        </ul>
-</section>
+    </div>
+</div>
+
+<!----------------------------------------container second-->
+
+<div class="container second">
+    <div class="row main-team">
+
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="title-team">Meet a partner for your best holiday</h3>
+                </div>
+
+<!---------------------------------------------------all-items-->
+                <div class="col-12">
+                    <div class="row all-items">
+
+                        <div class="col-12 col-md-6 col-lg-3 li-team">
+                            <div class="pic d-flex justify-content-center image-team">
+                                <img class="img-team" src="./img/p1.png" alt="man" width="124" height="124">
+                            </div>
+
+                            <div class="text">
+                                <h4 class="name-team">Bradley Hunter</h4>
+                                <p class="text-team">Based in Chicago. I love playing tennis and loud music.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3 li-team">
+                            <div class="pic d-flex justify-content-center image-team">
+                                <img class="img-team" src="./img/p2.png" alt="man" width="124" height="124">
+                            </div>
+
+                            <div class="text">
+                                <h4 class="name-team">Lucas Marsha</h4>
+                                <p class="text-team">I get my inspiration from nature and objects around me. I have
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3 li-team">
+                            <div class="pic d-flex justify-content-center image-team">
+                                <img class="img-team" src="./img/p3.png" alt="man" width="124" height="124">
+                            </div>
+                            <div class="text">
+                                <h4 class="name-team">Heather Walker</h4>
+                                <p class="text-team">I'm a happy person that loves cats and climbing on mountains.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3 li-team">
+                            <div class="pic d-flex justify-content-center image-team">
+                                <img class="img-team" src="./img/p4.png" alt="man" width="124" height="124">
+                            </div>
+
+                            <div class="text">
+                                <h4 class="name-team">Bradley Hunter</h4>
+                                <p class="text-team">Based in Chicago. I love playing tennis and loud music.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+<!------------------------------------------button-->
+
+                    <div class="row justify-content-center li-team">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a class="other" href="#">See other partners</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
+
 </html>
