@@ -85,6 +85,9 @@ img {
 .container {
     text-align: center;
 }
+.con-mar {
+   margin-bottom: 100px;
+}
 
 .title-second {
     font-family: "Montserrat", sans-serif;
@@ -134,10 +137,6 @@ img {
     margin-bottom: 70px;
 }
 
-
-.pic {
-    margin: 0 auto;
-}
 
 .partner-photo {
     position: relative;
@@ -236,7 +235,6 @@ img {
     line-height: 16.8px;
     color: #333333;
     font-weight: 700;
-
     margin-bottom: 16px;
 }
 
