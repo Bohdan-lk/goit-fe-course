@@ -306,6 +306,10 @@ img {
 
 @media (min-width: 767px) {
 
+    .logo {
+        margin-bottom: 0px;
+    }
+
     .title-second {
 
         font-size: 52px;
