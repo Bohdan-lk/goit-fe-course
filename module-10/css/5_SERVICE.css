@@ -48,11 +48,11 @@
 }
 
 .services__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 100px;
-}
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     margin-bottom: 100px;
+ }
 
 .services__item:nth-last-child(-n + 3) {
     margin: 0;
@@ -72,35 +72,7 @@
     max-width: 300px;
 }
 
-.services__item::before {
-    display: block;
-    min-width: 32px;
-    height: 32px;
-    content: "";
-    background-size: cover;
-    margin-right:10px;
-}
-
-.services__item___ic-alarm::before {
-    background-image: url("../img/svg-container.svg#ic-alarm");
-}
-
-.services__item___ic-book::before {
-    background-image: url("../img/svg-container.svg#ic-book");
-}
-
-.services__item___ic-comp::before {
-    background-image: url("../img/svg-container.svg#ic-comp");
-}
-
-.services__item___ic-image::before {
-    background-image: url("../img/svg-container.svg#ic-image");
-}
-
-.services__item___ic-home::before {
-    background-image: url("../img/svg-container.svg#ic-home");
-}
-
-.services__item___ic-table::before {
-    background-image: url("../img/svg-container.svg#ic-table");
+.item-service__icon {
+    fill: var(--color-sevices);
+    margin-right: 27px;
 }
