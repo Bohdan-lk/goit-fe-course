@@ -7,7 +7,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const gcmq = require('gulp-group-css-media-queries');
 const size = require('gulp-size');
-const usedcss = require('usedcss');
+// const usedcss = require('usedcss');
 const rename = require('gulp-rename');
 const mode = require('gulp-mode')();
 
