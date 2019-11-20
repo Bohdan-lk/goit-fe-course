@@ -2,5 +2,29 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
+@import 'normalize';
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:400,700');
+@import './helpers/variables';
+@import "base";
+@import './helpers/placeholder';
+
+
+    //componets\\*/
+@import "components/picture-back";
+@import "./components/container";
+@import "./components/site-navigation";
+@import "./components/second-part";
+@import "components/main-headr";
+@import "./components/services";
+@import "./components/team";
+@import "./components/list";
+@import "./components/form";
+
+
+
+
+
+
+
+
+
