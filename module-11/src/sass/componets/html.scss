@@ -1,0 +1,44 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*____________/size-page\_______________*/
+    --size-page-width: 1200px;
+    /*_____________/color_var\_______________*/
+    --color-sevices: #95e1d3;
+    --color-card_1: #f38181;
+    --color-card_2: #fce38a;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    min-width: var(--size-page-width);
+}
+
+.button{
+    border: none;
+    cursor: pointer;
+}
+
+.list{
+    list-style: none;
+
+}
+
+.link{
+    display: block;
+    text-decoration: none;
+}
+
