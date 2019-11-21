@@ -1,7 +1,7 @@
 {
-  "name": "module-11",
+  "name": "gulp-starter-kit",
   "version": "1.2.0",
-  "description": "![Logo of the project](./banner.png)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=1234 gulp start --development ",
@@ -48,6 +48,5 @@
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0",
     "usedcss": "^1.0.7"
-  },
-  "dependencies": {}
+  }
 }
