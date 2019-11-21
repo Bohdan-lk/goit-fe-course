@@ -1,6 +1,19 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
-@import 'normalize.scss';
+//_______/styles>base\___________
+//@import 'normalize.scss';
+@import "reset";
+@import "variables";
 @import 'base.scss';
+
+
+//___________/coponents\______________
+@import "components/header";
+@import "components/nav";
+@import "components/container";
+@import "components/menu";
+@import "components/logo";
+@import "components/list";
+@import "components/section-title";
+@import "components/social-icon";
+@import "components/team-photo";
+@import "components/text";
+@import "components/footer";

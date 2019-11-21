@@ -1,0 +1,41 @@
+footer {
+  padding: 12px 0 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $title-font;
+  border-top: #cccccc 1px solid;
+  align-items: center;
+  @media (max-width: 764px) {
+    flex-direction: column;
+    min-height: 100px;
+  }
+}
+.footer__copyright {
+  margin: 0;
+  letter-spacing: -0.07em;
+}
+.footer__autor{
+  color: #f38181;
+}
+.subscribe-email {
+  padding: 8px;
+  min-width: 230px;
+  border: 1px solid $color-border-btn;
+  border-right: none;
+  font-size: 17px;
+  font-style: italic;
+}
+.subscribe-button {
+  padding: 10px 30px;
+  background-color: $primary-color;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $title-font;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  &:hover {
+    background-color: $secondary-color;
+    transition: background-color 0.2s linear;
+  }
+}
